@@ -1,0 +1,63 @@
+.card {
+  width: 10rem;
+  height: 13rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 10rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.26);
+  border: 7px solid var(--orangeCard);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  padding: 0px 26px 2rem 26px;
+}
+.card span:nth-of-type(2) {
+  color: var(--gray);
+  font-size: 16px;
+}
+.card > img {
+  transform: scale(0.6);
+  margin-bottom: -2rem;
+}
+.c-button {
+    background: #FFFFFF;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #5290FD;
+}
+@media screen and (max-width:480px) {
+  .card{
+    width: auto;
+  }
+}
+
+
+/* Responsive styles for screen widths between 481px and 1024px */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .Intro {
+    flex-direction: column;
+    gap: 6rem; /* Slightly smaller gap for tablet-sized screens */
+    height: 62rem; /* Adjusted height for medium screens */
+  }
+
+  .i-right {
+    transform: scale(0.9); /* Adjusted scaling for medium screens */
+    left: -2.5rem; /* Slightly less offset */
+  }
+
+  .i-right .blur {
+    display: none;
+  }
+
+  .floating-div:nth-of-type(1) {
+    top: -6rem !important; /* Adjusted floating-div position */
+  }
+}
+
+

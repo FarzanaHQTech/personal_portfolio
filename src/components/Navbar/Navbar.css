@@ -1,0 +1,83 @@
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+.n-name{
+    font-size: 1.3rem;
+    font-weight: bold
+    ;
+}
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+.n-list{
+    flex: 10;
+}
+.n-list>ul{
+    display: flex;
+    gap: 2rem;
+    margin-right:4rem ;
+}
+
+.n-list>ul>li:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+
+@media screen and (max-width:499px) {
+    .n-list{
+        display: none;
+    }
+    .n-button{
+        display: none;
+      }
+}
+
+/* Responsive styles for screens between 500px and 1024px (hamburger menu logic) */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    .n-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .n-list {
+        display: none; /* Hide menu initially */
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .n-list.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .n-button {
+        display: block; /* Show hamburger menu icon */
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .n-left {
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,45 @@
+.client-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .client-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .client-table thead {
+    background-color: var(--orange);
+    color: white;
+  }
+  
+  .client-table th,
+  .client-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .client-table tbody tr {
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease;
+  }
+  
+  .client-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .client-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .client-table th {
+    font-weight: bold;
+  }
+  
+  .client-table td {
+    color: #555;
+  }
+  

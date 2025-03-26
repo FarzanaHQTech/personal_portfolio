@@ -1,0 +1,203 @@
+.t-wrapper{
+    padding: 0 3rem 0 3rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+/* heading  */
+.t-heading{
+    align-self: start;
+
+}
+.t-heading>*{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.t-heading span:nth-of-type(2){
+    color: var(--orange);
+}
+.t-blur1{
+    left: 38rem;
+    top: 16rem;
+
+}
+.t-blur2{
+    top: 9rem;
+    left: 0;
+
+}
+.testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    height: 15rem;
+    padding: 2rem;
+    flex-direction: column;
+    /* style same as work.css  */
+    background: rgba(255, 255, 255, 0.26);
+    border: 7px solid var(--blueCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+}
+.testimonial>img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+.testimonial>span{
+    margin-top: 10px;
+    color: var(--gray);
+}
+/* slider  */
+.t-wrapper .swiper {
+    width: 100%;
+    height: 70%;
+}
+
+.t-wrapper .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.t-wrapper .swiper-pagination-bullet-active{
+    background: var(--orange);
+}
+/* @media screen and (max-width:480px) {
+    .t-wrapper{
+        padding: 0;
+
+    }
+    .testimonial  >img{
+width: 70px;
+height: 70vh;
+    }
+    
+} */
+
+@media screen and (max-width: 480px) {
+    .t-wrapper {
+        padding: 0 1rem; /* Reduce padding */
+        margin-top: 4rem; /* Adjust margin for smaller screens */
+        gap: 1rem; /* Decrease gap between elements */
+    }
+
+    .t-heading {
+        align-self: center; /* Center align the heading */
+        text-align: center; /* Center the text */
+    }
+
+    .t-heading > * {
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    .testimonial {
+        width: 100%; /* Make the testimonial take most of the screen width */
+        height: auto; /* Allow height to adjust dynamically */
+        padding: -2rem; /* Reduce padding */
+        border-width: 5px; /* Adjust border thickness */
+        border-radius: 15px; /* Slightly smaller border-radius */
+    }
+
+    .testimonial > img {
+        width: 70px; /* Reduce image size */
+        height: 70px; /* Match width for circular shape */
+    }
+
+    .testimonial > span {
+        font-size: 0.7rem; /* Reduce text size */
+    }
+
+    .t-wrapper .swiper {
+        height: 60%; /* Adjust height for better fit */
+    }
+
+    .t-wrapper .swiper-slide {
+        padding: 0.5rem; /* Add padding for better spacing */
+    }
+
+    .t-blur1 {
+        left: 20rem; /* Adjust position for smaller screens */
+        top: 10rem;
+    }
+
+    .t-blur2 {
+        top: 5rem; /* Adjust top position */
+        left: 1rem; /* Adjust left position */
+    }
+}
+
+
+
+/* Tablets (481px to 1024px) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .t-wrapper {
+        padding: 2rem;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .t-heading > * {
+        font-size: 1.8rem;
+    }
+
+    .testimonial {
+        width: 60%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .testimonial > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .t-blur1 {
+        left: 30rem;
+        top: 14rem;
+    }
+
+    .t-blur2 {
+        top: 10rem;
+        left: 5rem;
+    }
+}
+
+/* Large screens (1025px and up) */
+@media screen and (min-width: 1025px) {
+    .t-wrapper {
+        padding: 3rem;
+        height: 100vh;
+        gap: 2rem;
+    }
+
+    .t-heading > * {
+        font-size: 2rem;
+    }
+
+    .testimonial {
+        width: 40rem;
+        height: 15rem;
+        padding: 2rem;
+    }
+
+    .testimonial > img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .t-blur1 {
+        left: 38rem;
+        top: 16rem;
+    }
+
+    .t-blur2 {
+        top: 9rem;
+        left: 0;
+    }
+}

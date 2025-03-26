@@ -1,0 +1,104 @@
+.experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 30vh;
+    margin-bottom: 5rem;
+}
+.achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right: -8px;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+    z-index: -1;
+    box-shadow: var(--boxShadow, 0 4px 6px rgba(0, 0, 0, 0.1));
+    
+}
+    /* Ensure box-shadow has a fallback */
+
+
+.circle{
+    width: 4rem;
+    height: 4rem;
+    background: white;
+    border-radius: 100%;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+
+.achivement span:nth-of-type(2){
+    color: var(--orange);
+    
+}
+
+.blur2 {
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: -100%;
+    left: 56%;
+    filter: blur(72px);
+  }
+/*   
+@media screen and (max-width:480px) {
+    .experience{
+        margin: auto;
+    }
+    
+} */
+
+
+
+
+
+
+/* Responsive styles for tablets (481px to 1024px) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .experience {
+        flex-direction: row;
+        gap: 4rem;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+
+    .circle {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.3rem;
+    }
+
+    .blur2 {
+        width: 20rem;
+        height: 13rem;
+        top: -90%;
+        left: 55%;
+        filter: blur(68px);
+    }
+}
+
+
